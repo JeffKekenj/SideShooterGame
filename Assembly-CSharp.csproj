@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{BB832678-677B-6038-460F-40253D8ED710}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_1;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;ENABLE_TEXTUREID_MAP;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AnimatorBehaviour\AttackBehaviour.cs" />
+     <Compile Include="Assets\AnimatorBehaviour\DamageBehaviour.cs" />
+     <Compile Include="Assets\AnimatorBehaviour\DeathBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Rail\Boundary.cs" />
+     <Compile Include="Assets\Scripts\Rail\Cursor.cs" />
+     <Compile Include="Assets\Scripts\Rail\RailCharacter.cs" />
+     <Compile Include="Assets\Scripts\Rail\RailPlayer.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\AmmoPickup.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\BarScript.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Camera2DFollow.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\CameraFollowSLague.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\CameraShake.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Character.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\CollisionTrigger.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemySight.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\EscapingState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\IEnemyState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\IdleState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\PatrolState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\RangedState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\TurretStates\AttackTurretState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\TurretStates\ITurretState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyStates\TurretStates\IdleTurretState.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\EnemyTemp.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\GameCleaner.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\GameMaster.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\IgnoreCollision.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Player.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\RandomPickup.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Stat.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\Turret.cs" />
+     <Compile Include="Assets\Scripts\Sidescrolling\WeaponPickup.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
